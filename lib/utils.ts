@@ -12,3 +12,7 @@ export function formatDate(date: string) {
     year: "numeric",
   });
 }
+
+export const parseServerActionResponse = <T>(response: T) => {
+  return JSON.parse(JSON.stringify(response));
+};
